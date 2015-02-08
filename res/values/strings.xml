@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Primeiro Projeto</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="labelName">Digite o nome abaixo:</string>
+    <string name="botaoOK">OK</string>
+    <string name="labelResposta">Resposta:</string>
+    <string name="labelCurso">Digite o curso abaixo:</string>
+    <string name="botaoVoltar">Voltar</string>
+    <string name="labelReceiver">Inicie o BroadcastReceiver abaixo:</string>
+    <string name="botaoReceiver">Chamar Receiver</string>
+    <string name="labelService">Clique abaixo para iniciar e parar o serviço:</string>
+	<string name="botaoService">Serviço</string>
+	<string name="labelAlarm">Clique abaixo para agendar:</string>
+	<string name="botaoAlarm">Agendar</string>
+	<string name="botaoIniciar">Iniciar</string>
+	<string name="botaoRepetir">Repetir</string>
+	<string name="botaoParar">Parar</string>
+
+</resources>

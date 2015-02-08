@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/labelCurso" />
+    
+    <EditText 
+        android:id="@+id/editTextCurso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewTitulo"
+        android:layout_below="@+id/textViewTitulo"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:inputType="textPersonName">
+        
+        <requestFocus />
+     </EditText>
+     
+    <Button 
+        android:id="@+id/buttonVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextCurso"
+        android:layout_below="@+id/editTextCurso"
+        android:layout_marginTop="5dp"
+        android:text="@string/botaoVoltar"/>
+    
+    <TextView 
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buttonVoltar"
+        android:layout_below="@+id/buttonVoltar"
+        android:layout_marginTop="5dp"
+        android:text="@string/labelResposta"/>
+
+</RelativeLayout>

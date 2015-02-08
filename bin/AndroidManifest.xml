@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.treinaweb.primeiroprojeto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="br.com.treinaweb.primeiroprojeto.Service"/>
+
+    <permission android:name="br.com.treinaweb.primeiroprojeto.Service" android:protectionLevel="normal" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Tela1Activity"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity
+            android:name="br.com.treinaweb.primeiroprojeto.Tela2"
+            android:label="@string/app_name">
+            
+        </activity>
+        <activity 
+            android:name="br.com.treinaweb.primeiroprojeto.Tela3"
+            android:label="@string/app_name">
+        </activity>
+        
+        <service android:name="br.com.treinaweb.primeiroprojeto.MyService"
+            android:permission="br.com.treinaweb.primeiroprojeto.Service">
+            <intent-filter>
+                <action android:name="MyService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        
+        <activity android:name="br.com.treinaweb.primeiroprojeto.Tela4"
+          		android:label="@string/app_name">
+		</activity>
+		
+        <activity android:name="br.com.treinaweb.primeiroprojeto.Tela5"
+          		android:label="@string/app_name">
+		</activity>
+		
+        <receiver android:name="br.com.treinaweb.primeiroprojeto.ReceiverScheduled"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="ReceiverSheduled" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        
+        <service android:name="br.com.treinaweb.primeiroprojeto.ServiceSheduled"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="ServiceSheduled" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        
+        <activity android:name="br.com.treinaweb.primeiroprojeto.Tela6"
+          		android:label="@string/app_name">
+		     <intent-filter>
+		        <action android:name="android.intent.action.MAIN" />
+		        <category android:name="android.intent.category.LAUNCHER" />
+		    </intent-filter>
+		</activity>
+		
+    </application>
+
+</manifest>
